@@ -22,7 +22,7 @@ if (fraseEncriptada.includes( matriz_code[i][0])){
       matriz_code[i][0],
       matriz_code[i][1],
       
-      
+  
     );
 }
  }

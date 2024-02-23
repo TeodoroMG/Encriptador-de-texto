@@ -17,7 +17,15 @@ function btnEncriptar() {
 }
 function encriptar(fraseEncriptada ){
 for(let  i=0 ; i < matriz_code.length; i++){
-
+if (fraseEncriptada.includes( matriz_code[i][0])){
+    fraseEncriptada = fraseEncriptada.replaceAll(
+      matriz_code[i][0],
+      matriz_code[i][1],
+      
+      
+    );
+}
+ }
+ return fraseEncriptada;
 }
 ;
-console.log([].length);

@@ -10,3 +10,14 @@ const matriz_code = [
 [ "o", "ober"],//índice 3
 [ "u", "ufat"],//índice 4
 ];
+
+function btnEncriptar() {
+   const texto = campo_texto.value;
+   console.log(texto);
+}
+function encriptar(fraseEncriptada ){
+for(let  i=0 ; i < matriz_code.length; i++){
+
+}
+;
+console.log([].length);

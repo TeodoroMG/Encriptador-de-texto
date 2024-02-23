@@ -1,13 +1,30 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel ="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
 
-    <title>Encriptador de texto </title>
-</head>
-<body>
+    <title>Encriptador de texto</title>
+  </head>
+  <body>
+    <main class="main">
+      <section>
+        <textarea
+          id="texto-encriptado"
+          class="campo-texto"
+          placeholder="Texto a encriptar"
+        ></textarea>
+        <div class="btn">
+          <button class="btnencriptar">Encriptar</button>
+          <button class="btndesencriptar">Desencriptar</button>
+        </div>
+      </section>
+      <section class="campo-mensaje">
+        <textarea id="campo-mensaje" cols="30" rows="10" class="mensaje"> </textarea>
     
-</body>
+      </section>
+    </main>
+    
+  </body>
 </html>

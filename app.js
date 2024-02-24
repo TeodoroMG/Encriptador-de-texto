@@ -1,6 +1,6 @@
 
-const campo_texto = document.querySelector("#texto-encriptado");
-const campo_mensaje = document.querySelector("#campo-mensaje");
+const campo_texto = document.querySelector("# texto-encriptado");
+const campo_mensaje = document.querySelector("# campo-mensaje");
 
 
 const matriz_code = [
@@ -13,7 +13,9 @@ const matriz_code = [
 
 function btnEncriptar() {
    const texto = campo_texto.value;
-   console.log(texto);
+   campo_mensaje.value = texto;
+
+
 }
 function encriptar(fraseEncriptada ){
 for(let  i=0 ; i < matriz_code.length; i++){

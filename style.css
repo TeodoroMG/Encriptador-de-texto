@@ -1,3 +1,11 @@
 .btn{
-    font-style: normal;border: 1px;
+    font-style: normal;border: 1px  ;padding: 10px; 
+
+}
+.btnEncriptar{
+cursor:pointer; border-radius: 5px;
+}
+.btnDesencriptar{
+
+ cursor:pointer;border-radius: 5px;   
 }

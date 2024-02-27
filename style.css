@@ -20,3 +20,8 @@ cursor:pointer; border-radius: 5px;
 
  cursor:pointer;border-radius: 5px;   
 }
+.logo{
+    padding-top: 10 px;
+    margin-left: 10 px;
+    width: 10%;
+}

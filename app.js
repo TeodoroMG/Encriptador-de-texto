@@ -1,6 +1,18 @@
+/*variables*/ 
 
 const campo_texto = document.querySelector("# texto-encriptado");
+
 const campo_mensaje = document.querySelector("# campo-mensaje");
+
+
+//La letra "e" es convertida para "enter"
+//La letra "i" es convertida para "imes"
+//La letra "a" es convertida para "ai"
+//La letra "o" es convertida para "ober"
+//La letra "u" es convertida para "ufat" 
+
+
+
 
 
 const matriz_code = [

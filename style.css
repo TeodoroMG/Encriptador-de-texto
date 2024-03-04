@@ -39,7 +39,7 @@ cursor:pointer; border-radius: 5px;
     text-transform: lowercase;
 
 }
-::placeholder{color: #0a3871;}
+.campo-texto::placeholder{color: #0a3871;}
 .campo-texto:focus{outline:none ;}
 
 

@@ -8,15 +8,19 @@
   
     
 }
-
-
-.btn{
-    font-style: normal;border: 1px  ;padding: 10px; 
-
+body{
+  width: 1440px;
+height: 1024px;
+top: 622px;
+left: -2277px;
+  
 }
+
+
 .btnEncriptar{
 cursor:pointer; border-radius: 5px;
 }
+
 .btnDesencriptar{
 
  cursor:pointer;border-radius: 5px;   
@@ -62,7 +66,10 @@ position: fixed;
 }
 .botones{
     display: flex;
-    margin-top: 18px;
+    margin-top: 18px; 
+    font-style: normal;
+    border: 1px;
+    padding: 10px; 
 
 }
 

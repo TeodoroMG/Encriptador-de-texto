@@ -43,8 +43,8 @@ cursor:pointer; border-radius: 5px;
     text-transform: lowercase;
 
 }
-.campo-texto::placeholder{color: #0a3871;}
-.campo-texto:focus{outline:none ;}
+.text-area::placeholder{color: #0a3871;}
+.text-area:focus{outline:none ;}
 
 
 .mensaje{

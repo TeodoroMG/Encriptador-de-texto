@@ -1,65 +1,67 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="stylesheet" href="/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-     <title>Encriptador de texto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Encriptador de texto</title>
   </head>
-  <container>
+
   <body>
-
-    <header>
-      <img class="logo" src="img/Property 1=Closed.png" alt=" logo de alura">
-    </header>
-
-    <main class="main">
-       
-
-       <section>
+    <div class="container">
+      <div class="encriptar">
         <textarea
-          class="texto" cols="30" rows="10" 
-          id="texto-encriptado"
-          placeholder="Ingrese el texto aquí!" 
+          name="texto"
+          class="texto"
+          id="texto"
+          cols="30"
+          rows="10"
+          placeholder=" Ingresa el texto aquí!"
         ></textarea>
 
-        <div>
-          <h6 class="informacion">Solo letras minúsculas y sin acento | Creado por Teodoro Matarrita Gómez | Software developer </h6>
+        <div class="terminos">
+          <p>Solo letras minúsculas y sin acento</p>
         </div>
 
         <div class="botones">
+          <button class="btn-encriptar" type="button" onclick="encriptar()">
+            Encriptar
+          </button>
 
-          <button class="btn-encriptar" type="button" onclick="encriptar()">Encriptar</button>
-
-          <button class="btn-desencriptar" type="button" onclick="desencriptar()">Desencriptar</button>
-
-
-         
+          <input
+            type="button"
+            class="btn-desencriptar"
+            value="Desencriptar"
+            onclick="desencriptar()"
+          />
         </div>
-
-      </section>
-
-      <section class="mensaje-encriptado">
-        <p id=" parrafo">Ingresa el texto a desencriptar!</p>
-
-          <textarea class="mensaje" id="campo-mensaje" cols="20" rows="10" > </textarea>
-        
-          <div>
-            <button class="copiar">Copiar</button>
-          </div>
-          
-      </section>
-      
-      </section>
-
-      
-    </main>
-
-    <script src="app.js"></script>
-
+      </div>
+      <div class="encriptado">
+        <img src="" alt="" id="muñeco" />
+        <div class="mensje-encriptado" id="mensaje-encriptado">
+          <h2 id="titulo-mensaje">Ningún mensaje encontrado</h2>
+          <p id="parrafo">
+            Ingresa el texto que deseas encriptar ó desencriptar
+          </p>
+          <textarea
+            name="mensaje"
+            id="mensaje"
+            cols="30"
+            rows="10"
+            class="mensaje"
+          ></textarea>
+        </div>
+      </div>
+    </div>
   </body>
-  </container>
+
+  <script src="index.js"></script>
 </html>

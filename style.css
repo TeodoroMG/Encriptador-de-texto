@@ -65,4 +65,21 @@
     top:82%;
 }
 
+.btn-encriptar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    gap: 8px;
+    width: 25%;
+    background-color: #0a3871;
+    border-radius: 24px;
+    font-family: "inter";
+    font: size 18px;
+    line-height: 19px ;
+    text-align: center;
+    color: #ffffff;
+
+    
+}
  

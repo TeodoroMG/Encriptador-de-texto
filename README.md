@@ -32,7 +32,7 @@ Este conjunto de funciones permite al usuario encriptar y desencriptar texto en 
 
 Encriptador de texto(Detalles específicos) .
 
-##Parte 1
+## Parte 1
 
 function encriptar() {
   const texto = document.getElementById("texto").value;
@@ -41,7 +41,7 @@ function encriptar() {
 }
 
 
-#Aquí tienes una explicación de la función `encriptar()` en JavaScript:
+## Aquí tienes una explicación de la función `encriptar()` en JavaScript:
 
 1. `const texto = document.getElementById("texto").value;`: Esta línea obtiene el valor del elemento HTML con el id "texto". Este elemento probablemente sea un `<textarea>` donde los usuarios ingresan el texto que desean encriptar. El valor del textarea se guarda en la variable `texto`.
 
@@ -51,8 +51,8 @@ function encriptar() {
 
 ##En resumen, la función `encriptar()` se encarga de obtener el texto del textarea, encriptarlo usando la función `encriptarTexto()` y luego mostrar el texto encriptado en la página usando la función `mostrarMensajeEncriptado()`. Esto es parte de un proceso más grande que implica encriptar y mostrar el texto en la interfaz de usuario de tu página web.
 
-##Parte 2
-#Explicación.
+## Parte 2
+## Explicación.
 
  function encriptarTexto(texto) {
   const matrizCode = [
@@ -87,7 +87,7 @@ Claro, aquí tienes una explicación de la función `encriptarTexto()` en JavaSc
 
 En resumen, la función `encriptarTexto()` toma un texto como entrada, lo recorre letra por letra y lo encripta según la matriz de código proporcionada, y luego devuelve el texto encriptado. Esta función se utiliza como parte del proceso de encriptación del texto en tu aplicación.
 
-##Parte 2
+## Parte 3
 
 
 
@@ -97,7 +97,7 @@ function desencriptar() {
   mostrarMensajeDesencriptado(textoDesencriptado);
 }
 
-#Aquí tienes una explicación de la función `desencriptar()` en JavaScript:
+## Aquí tienes una explicación de la función `desencriptar()` en JavaScript:
 
 1. `function desencriptar() {`: Esta línea define una función llamada `desencriptar()` que no acepta ningún parámetro.
 
@@ -109,7 +109,7 @@ function desencriptar() {
 
 En resumen, la función `desencriptar()` se encarga de obtener el texto encriptado ingresado por el usuario, desencriptarlo usando la función `desencriptarTexto()`, y luego mostrar el texto desencriptado en la interfaz de usuario utilizando la función `mostrarMensajeDesencriptado()`. Esto es parte de un proceso más grande que implica la desencriptación y la visualización del texto desencriptado en la página web.
 
-##Parte 4
+## Parte 4
 function desencriptarTexto(textoEncriptado) {
   const matrizCode = [
     ["enter", "e"],
@@ -130,7 +130,7 @@ function desencriptarTexto(textoEncriptado) {
   return textoEncriptado;
 }
 
-#Aquí tienes una explicación de la función `desencriptarTexto()` en JavaScript:
+## Aquí tienes una explicación de la función `desencriptarTexto()` en JavaScript:
 
 1. `function desencriptarTexto(textoEncriptado) {`: Esta línea define una función llamada `desencriptarTexto()` que acepta un parámetro `textoEncriptado`, que representa el texto encriptado que se va a desencriptar.
 
@@ -157,7 +157,7 @@ function mostrarMensajeDesencriptado(texto) {
   document.getElementById("parrafo").innerText = texto;
 }
 
-#Explicación
+## Explicación
 
 Estas dos funciones, `mostrarMensajeEncriptado()` y `mostrarMensajeDesencriptado()`, son similares en su estructura y objetivo. Ambas se utilizan para actualizar la interfaz de usuario (UI) con un mensaje y un texto específicos. Aquí está una explicación de cada una:
 
@@ -171,7 +171,7 @@ Estas dos funciones, `mostrarMensajeEncriptado()` y `mostrarMensajeDesencriptado
 
 En resumen, estas funciones se utilizan para actualizar dinámicamente la interfaz de usuario con mensajes y texto específicos, dependiendo de si se está mostrando el texto encriptado o desencriptado. Esto proporciona una experiencia interactiva al usuario al utilizar el encriptador/desencriptador de texto en tu aplicación web.
 
-##Resumen de todo
+## Resumen de todo el Proyecto
 
 Este conjunto de funciones forma parte de un encriptador y desencriptador de texto que opera en una interfaz de usuario (UI) web. Aquí hay un resumen de cada función y su propósito en el contexto del programa:
 
@@ -187,4 +187,4 @@ Este conjunto de funciones forma parte de un encriptador y desencriptador de tex
 
 6. `mostrarMensajeDesencriptado(texto)`: Similar a `mostrarMensajeEncriptado()`, esta función actualiza la interfaz de usuario para mostrar el título "Mensaje Desencriptado" y el texto desencriptado proporcionado como entrada.
 
-En resumen, este conjunto de funciones permite al usuario encriptar y desencriptar texto en una interfaz web, brindando una experiencia interactiva al usuario.
+## En resumen, este conjunto de funciones permite al usuario encriptar y desencriptar texto en una interfaz web, brindando una experiencia interactiva al usuario.

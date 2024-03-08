@@ -30,7 +30,7 @@ Estas funciones se utilizan para actualizar dinámicamente la interfaz de usuari
 
 Este conjunto de funciones permite al usuario encriptar y desencriptar texto en una interfaz web, brindando una experiencia interactiva al usuario.
 
-## Encriptador de texto(Detalles específicos) .
+## Encriptador de texto ( Detalles Específicos ) .
 
 
 ## Parte 1

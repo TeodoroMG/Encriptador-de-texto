@@ -49,10 +49,9 @@ function encriptar() {
 
 3. `mostrarMensajeEncriptado(textoEncriptado);`: Finalmente, se llama a otra función llamada `mostrarMensajeEncriptado()` pasando el texto encriptado como argumento. Esta función se encarga de mostrar el texto encriptado en algún lugar de la página, como en otro elemento HTML.
 
-##En resumen, la función `encriptar()` se encarga de obtener el texto del textarea, encriptarlo usando la función `encriptarTexto()` y luego mostrar el texto encriptado en la página usando la función `mostrarMensajeEncriptado()`. Esto es parte de un proceso más grande que implica encriptar y mostrar el texto en la interfaz de usuario de tu página web.
+## En resumen, la función `encriptar()` se encarga de obtener el texto del textarea, encriptarlo usando la función `encriptarTexto()` y luego mostrar el texto encriptado en la página usando la función `mostrarMensajeEncriptado()`. Esto es parte de un proceso más grande que implica encriptar y mostrar el texto en la interfaz de usuario de tu página web.
 
 ## Parte 2
-## Explicación.
 
  function encriptarTexto(texto) {
   const matrizCode = [
@@ -71,7 +70,7 @@ function encriptar() {
   return texto;
 }
 
-Claro, aquí tienes una explicación de la función `encriptarTexto()` en JavaScript:
+## aquí tienes una explicación de la función `encriptarTexto()` en JavaScript:
 
 1. `function encriptarTexto(texto) {`: Esta línea define una función llamada `encriptarTexto()` que acepta un parámetro `texto`, que representa el texto que se va a encriptar.
 
@@ -88,7 +87,6 @@ Claro, aquí tienes una explicación de la función `encriptarTexto()` en JavaSc
 En resumen, la función `encriptarTexto()` toma un texto como entrada, lo recorre letra por letra y lo encripta según la matriz de código proporcionada, y luego devuelve el texto encriptado. Esta función se utiliza como parte del proceso de encriptación del texto en tu aplicación.
 
 ## Parte 3
-
 
 
 function desencriptar() {
@@ -157,9 +155,7 @@ function mostrarMensajeDesencriptado(texto) {
   document.getElementById("parrafo").innerText = texto;
 }
 
-## Explicación
-
-Estas dos funciones, `mostrarMensajeEncriptado()` y `mostrarMensajeDesencriptado()`, son similares en su estructura y objetivo. Ambas se utilizan para actualizar la interfaz de usuario (UI) con un mensaje y un texto específicos. Aquí está una explicación de cada una:
+## Estas dos funciones, `mostrarMensajeEncriptado()` y `mostrarMensajeDesencriptado()`, son similares en su estructura y objetivo. Ambas se utilizan para actualizar la interfaz de usuario (UI) con un mensaje y un texto específicos. Aquí está una explicación de cada una:
 
 1. `mostrarMensajeEncriptado(texto)`: Esta función toma un parámetro `texto`, que es el texto encriptado que se desea mostrar en la interfaz de usuario. Realiza dos acciones:
    - `document.getElementById("titulo-mensaje").innerText = "Mensaje Encriptado";`: Actualiza el contenido del elemento con el id "titulo-mensaje" para mostrar "Mensaje Encriptado". Este elemento suele ser un `<h2>` que sirve como título en la UI.

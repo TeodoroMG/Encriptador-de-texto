@@ -212,9 +212,7 @@
     visibility: hidden;
   }
 }
-```
 
-Estos cambios deberían mejorar la legibilidad y la consistencia del código CSS, así como corregir los errores de sintaxis que podrían haber causado problemas de renderizado en tu página.
  /* responsive desingn*/
 
  @media (max-width: 57.5em) {
@@ -276,8 +274,5 @@ display: none;
 visibility: hidden;
 
   }
-
-
-
 
  }

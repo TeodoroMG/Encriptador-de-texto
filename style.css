@@ -3,7 +3,23 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Inter',sans-serif;
 }
+body{
+  background-color: #f4f4fc;
+}
+head{
+  width: 100%;
+  height: 70px;
+}
+#muñeco{
+width: 100%;
+height: 50px;
+padding: 20px;
+padding-left: 40px;
+
+}
+
 
 /* Estilos para el contenedor principal */
 .container {
@@ -47,38 +63,33 @@
 
 /* Estilos para el botón de encriptar */
 .btn-encriptar {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 2%;
-  gap: 8px;
-  width: 25%;
-  background-color: #0a3871;
-  border-radius: 24px;
-  font-size: 18px; /* Corregido: era 'font: size 18px;' */
-  line-height: 19px;
-  text-align: center;
-  color: #fff;
+    height: 67px;
+    text-color: white;
+    width: 328px;
+    border-radius: 24px;
+    background-color: #0A3871;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    border: none;
+    margin-right: 20px;
+    cursor: pointer;
+
 }
 
 /* Estilos para el botón de desencriptar */
 .btn-desencriptar {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: center;
-  padding: 2%;
-  gap: 8px;
-  width: 25%;
-  background: #d8dfe8;
-  border: 1px solid #0a3871;
-  border-radius: 24px;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 19px;
-  text-align: center;
-  color: #0a3871;
+    height: 67px;
+    text-color: white;
+    width: 328px;
+    border-radius: 24px;
+    background-color: #D8DFE8;
+    color: #0A3871;
+    font-size: 16px;
+    font-weight: 400;
+    border: 1px solid #0A3871;
+    margin-right: 20px;
+    cursor: pointer;
 }
 
 /* Efecto de hover para los botones */
@@ -91,16 +102,11 @@
 
 /* Estilos para la sección de encriptación */
 .encriptado {
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  width: 30%;
-  height: 90%;
-  left: 60%;
-  top: 5%;
-  background: white;
-  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.8%);
-  border-radius: 32px;
+ position: absolute;
+ left: 30px;
+ top: 180px;
+ box-sizing: border-box;
+ padding-top: 50px; 
 }
 
 /* Estilos para el mensaje encriptado */

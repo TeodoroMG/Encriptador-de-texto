@@ -1,46 +1,58 @@
-/*variables*/ 
-
-const campo_texto = document.querySelector("# texto-encriptado");
-
-const campo_mensaje = document.querySelector("# campo-mensaje");
-
-
-//La letra "e" es convertida para "enter"
-//La letra "i" es convertida para "imes"
-//La letra "a" es convertida para "ai"
-//La letra "o" es convertida para "ober"
-//La letra "u" es convertida para "ufat" 
-
-
-
-
-
-const matriz_code = [
-[ "e", "enter"],//índice 0
-[ "i", "imes"],//índice 1
-[ "a", "ai"],//índice 2
-[ "o", "ober"],//índice 3
-[ "u", "ufat"],//índice 4
-];
-
-function btnEncriptar() {
-   const texto = campo_texto.value;
-   campo_mensaje.value = texto;
-
-
+function encriptar() {
+  const texto = document.getElementById("texto").value;
+  const textoEncriptado = encriptarTexto(texto);
+  mostrarMensajeEncriptado(textoEncriptado);
 }
-function encriptar(fraseEncriptada ){
-for(let  i=0 ; i < matriz_code.length; i++){
-if (fraseEncriptada.includes( matriz_code[i][0])){
-    fraseEncriptada = fraseEncriptada.replaceAll(
-      matriz_code[i][0],
-      matriz_code[i][1],
-      
-  
-    );
-}
- }
 
- return fraseEncriptada;
+function encriptarTexto(texto) {
+  const matrizCode = [
+    ["e", "enter"],
+    ["i", "imes"],
+    ["a", "ai"],
+    ["o", "ober"],
+    ["u", "ufat"],
+  ];
+
+  for (let i = 0; i < matrizCode.length; i++) {
+    if (texto.includes(matrizCode[i][0])) {
+      texto = texto.replaceAll(matrizCode[i][0], matrizCode[i][1]);
+    }
+  }
+  return texto;
 }
-;
+
+function desencriptar() {
+  const textoEncriptado = document.getElementById("texto").value;
+  const textoDesencriptado = desencriptarTexto(textoEncriptado);
+  mostrarMensajeDesencriptado(textoDesencriptado);
+}
+
+function desencriptarTexto(textoEncriptado) {
+  const matrizCode = [
+    ["enter", "e"],
+    ["imes", "i"],
+    ["ai", "a"],
+    ["ober", "o"],
+    ["ufat", "u"],
+  ];
+
+  for (let i = 0; i < matrizCode.length; i++) {
+    if (textoEncriptado.includes(matrizCode[i][0])) {
+      textoEncriptado = textoEncriptado.replaceAll(
+        matrizCode[i][0],
+        matrizCode[i][1]
+      );
+    }
+  }
+  return textoEncriptado;
+}
+
+function mostrarMensajeEncriptado(texto) {
+  document.getElementById("titulo-mensaje").innerText = "Mensaje Encriptado";
+  document.getElementById("parrafo").innerText = texto;
+}
+
+function mostrarMensajeDesencriptado(texto) {
+  document.getElementById("titulo-mensaje").innerText = "Mensaje Desencriptado";
+  document.getElementById("parrafo").innerText = texto;
+}

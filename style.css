@@ -1,13 +1,19 @@
+
+/* Reset de estilos */
 * {
   margin: 0;
   padding: 0;
 }
+
+/* Estilos para el contenedor principal */
 .container {
   position: relative;
   width: 100%;
   height: 100%;
   background: #f3f5fc;
 }
+
+/* Estilos para el área de texto */
 .texto {
   position: absolute;
   width: 42%;
@@ -15,100 +21,76 @@
   left: 12%;
   top: 15%;
   border: none;
-
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
   line-height: 150%;
   background-color: #f3f5fc;
 }
+
+/* Estilos para el texto de marcador de posición */
 .texto::placeholder {
   color: #0a3871;
 }
-.texto:focus,
-.texto:active {
-  border: none;
-  outline: none;
-}
-.terminos {
+
+/* Estilos para los botones de encriptar y desencriptar */
+.botones {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  padding: 0px;
-  gap: 8px;
+  align-items: flex-start; /* Corregido: estaba con un espacio extra */
+  padding: 1% 0;
   position: absolute;
   width: 80%;
   left: 12%;
-  top: 80%;
-}
-.terminos p {
- 
-  font-style: normal;
-  font-weight: 400 ;
-  font-size: 12px;
-  line-height: 150%;
-  color: #495057;
-  opacity: 0.8%;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
+  top: 82%;
 }
 
-.botones {
-    display: flex;
-    flex-direction: row
-    align -items:flex-start; 
-    padding: 1% 0; 
-    position: Absolute;
-    width:80% ;
-    left: 12% ;
-    top: 82% ;
-}
-
+/* Estilos para el botón de encriptar */
 .btn-encriptar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding:2%;
-    gap: 8px;
-    width: 25%;
-    background-color: #0a3871;
-    border-radius: 24px;
-   
-    font: size 18px;
-    line-height: 19px;
-    text-align: center;
-    color: #fff;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2%;
+  gap: 8px;
+  width: 25%;
+  background-color: #0a3871;
+  border-radius: 24px;
+  font-size: 18px; /* Corregido: era 'font: size 18px;' */
+  line-height: 19px;
+  text-align: center;
+  color: #fff;
+}
 
- .btn-desencriptar {
-box-sizing: border-box;
-display: flex;
-flex-direction: row;
-align-items: flex-start;
-justify-content: center;
-padding: 2%;
-gap: 8px ;
-width: 25%;
-background: #d8dfe8;
-border: 1px solid #0a3871;
-border-radius: 24px;
+/* Estilos para el botón de desencriptar */
+.btn-desencriptar {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 2%;
+  gap: 8px;
+  width: 25%;
+  background: #d8dfe8;
+  border: 1px solid #0a3871;
+  border-radius: 24px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 19px;
+  text-align: center;
+  color: #0a3871;
+}
 
-font-weight: 400;
-font-size: 18px;
-line-height: 19px;
-text-align: center;
-color: #0a3871;
+/* Efecto de hover para los botones */
+.btn-desencriptar:hover,
+.btn-encriptar:hover {
+  margin: 0.3%;
+  width: 24.5%;
+  padding: 1.8%;
+}
 
- }
-
- .btn-desencriptar:hover,
- .btn-encriptar:hover {
-margin: 0.3%;
-width: 24.5%;
-padding: 1.8%;
- }
- .encriptado{
+/* Estilos para la sección de encriptación */
+.encriptado {
   display: flex;
   justify-content: center;
   position: absolute;
@@ -119,8 +101,10 @@ padding: 1.8%;
   background: white;
   box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.8%);
   border-radius: 32px;
- }
- .mensaje-encriptado{
+}
+
+/* Estilos para el mensaje encriptado */
+.mensaje-encriptado {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -131,35 +115,106 @@ padding: 1.8%;
   width: 100%;
   top: 65%;
   text-align: center;
- }
+}
 
- .mensaje-encriptado h2 {
-width: 60%;
-font-style: normal;
-font-weight: 700;
-font-size: 24px;
-line-height: 120%;
-text-align: center;
-color: #343a40;
- }
+/* Estilos para el título del mensaje */
+.mensaje-encriptado h2 {
+  width: 60%;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 120%;
+  text-align: center;
+  color: #343a40;
+}
 
- .mensaje-encriptado p {
+/* Estilos para el texto del mensaje */
+.mensaje-encriptado p {
   width: 80%;
   font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 150%;
-text-align: center;
-color: #495057;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: #495057;
+}
 
- }
- .encriptado img {
+/* Estilos para la imagen en la sección de encriptación */
+.encriptado img {
   position: absolute;
   width: 80%;
   height: 50%;
   top: 15%;
+}
 
- }
+/* Estilos para diseño responsivo */
+@media (max-width: 57.5em) {
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .encriptar {
+    width: 100%;
+  }
+
+  .texto {
+    width: 80%;
+    height: 60%;
+    left: 10%;
+    top: 5%;
+  }
+
+  .terminos {
+    width: 80%;
+    left: 10%;
+    top: 67%;
+  }
+
+  .terminos p {
+    font-size: 16px;
+  }
+
+  .botones {
+    width: 80%;
+    left: 10%;
+    top: 70%;
+  }
+
+  .btn-encriptar,
+  .btn-desencriptar {
+    width: 48%;
+    border-radius: 16px;
+  }
+
+  .btn-encriptar:hover,
+  .btn-desencriptar:hover {
+    margin: 0.3%;
+    width: 47.5%;
+    padding: 1.8%;
+  }
+
+  .encriptado {
+    width: 80%;
+    height: 15%;
+    left: 10%;
+    top: 80%;
+  }
+
+  .mensaje-encriptado {
+    width: 100%;
+    top: 5%;
+  }
+
+  .encriptado img {
+    top: 0;
+    display: none;
+    visibility: hidden;
+  }
+}
+```
+
+Estos cambios deberían mejorar la legibilidad y la consistencia del código CSS, así como corregir los errores de sintaxis que podrían haber causado problemas de renderizado en tu página.
  /* responsive desingn*/
 
  @media (max-width: 57.5em) {

@@ -36,14 +36,16 @@ gap: 8px
 
 /* Estilos para el área de texto */
 .texto {
-  width: 577px;
+  width: 981px;
+  height: 825px;
   top: 168px;
   left: 240px;
   font-family: 'Inter', sans-serif;
   font-weight: 400;
-  font-size: 32px;
+  font-size: 24px;
   line-height: 48px;
   color: #0A3871;
+  border: none;
 }
 
 /* Estilos para el texto de marcador de posición */
@@ -54,11 +56,12 @@ gap: 8px
 /* Estilos para los botones de encriptar y desencriptar */
 .botones {
  width: Hug (229px);
-height: Hug (18px);
+height: Hug (67px);
 top: 851px;
 left: 240px;
 gap: 8px;
 position: absolute;
+margin: 50px;
 
 }
 

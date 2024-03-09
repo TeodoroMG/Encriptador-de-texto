@@ -9,6 +9,8 @@ body{
   background-color: #f4f4fc;
   
 }
+
+
 head{
   
 }
@@ -31,12 +33,13 @@ gap: 8px;
 
 /* Estilos para el contenedor principal */
 .container {
-  background-image: src="img/android-2.jpg";
-  
+
 }
 
 /* Estilos para el área de texto */
 .texto {
+ 
+  
   width: 981px;
   height: 825px;
   top: 168px;
@@ -47,6 +50,8 @@ gap: 8px;
   line-height: 48px;
   color: #0A3871;
   border: none;
+
+    
 }
 
 /* Estilos para el texto de marcador de posición */

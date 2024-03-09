@@ -21,11 +21,15 @@ head{
     margin: 0 auto;
 }
 .terminos{
-  width: 229px;
+  text-align:center
+width: 500px;
 height:18px;
-top: 851px;
+top: 760px;
 left: 240px;
 gap: 8px;
+position: absolute;
+display: flex;
+flex-direction: row;
 
 }
 

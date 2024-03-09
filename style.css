@@ -55,13 +55,15 @@ gap: 8px
 
 /* Estilos para los botones de encriptar y desencriptar */
 .botones {
- width: Hug (229px);
-height: Hug (67px);
+ width: 400px;
+height:67px;
 top: 851px;
 left: 240px;
 gap: 8px;
 position: absolute;
 margin: 50px;
+display: flex;
+flex-direction: row;
 
 }
 
@@ -106,17 +108,17 @@ margin: 50px;
   padding: 1.8%;
   height: 67px;
   width: 228px;
-  display: none;
+  display: inline;
 }
 
 /* Estilos para la sección de encriptación */
 .encriptado {
 width: 400px;
-height: 944px;
+height: 825px;
 top: 40px;
 left: 1000px;
 border-radius: 32px;
-box-shadow: 0px 32px 32px -8px;
+box-shadow: 5px 32px 32px -8px;
 position: absolute;
 
 
